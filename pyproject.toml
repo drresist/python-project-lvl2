@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "hexlet-code"
+version = "0.1.0"
+description = ""
+authors = ["Maksim Fesenko <drresist@gmail.com>"]
+packages = [
+         { include = "hexlet-code" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+argparse = "^1.4.0"
+
+
+[tool.poetry.dev-dependencies]
+autopep8 = "^1.7.0"
+flake8 = "^5.0.4"
+pytest = "^7.1.2"
+
+[tool.poetry.scripts]
+gendiff = "hexlet-code.scripts.hexlet-code:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
