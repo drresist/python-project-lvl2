@@ -5,11 +5,11 @@ def main():
     """
     Enter point of application
     """
-    parser = create_parser()
+    _ = create_parser()
     print("Initial template")
 
 
-def create_parser()->argparse.ArgumentParser:
+def create_parser() -> argparse.ArgumentParser:
     """Create argument parser for input files."""
     parser = argparse.ArgumentParser(
         description="Compares two configuration files and shows a difference."
