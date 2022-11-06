@@ -9,7 +9,7 @@ def main():
     print("Initial template")
 
 
-def create_parser()->None:
+def create_parser()->argparse.ArgumentParser:
     """Create argument parser for input files."""
     parser = argparse.ArgumentParser(
         description="Compares two configuration files and shows a difference."
